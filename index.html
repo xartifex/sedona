@@ -104,7 +104,29 @@
       <button class="hotel-search-open-form-btn">поиск гостиницы в седоне</button>
       <section class="search-form">
         <h2 class="visually-hidden">Форма поиска отеля</h2>
-        <!-- to be done -->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="search-form-item">
+            <label>дата заезда:
+              <input type="text" name="checkin" placeholder="24 апреля">
+              <div id="checkin-calendar" class="search-form-calendar"/>
+            </label>
+          </p>
+          <p class="search-form-item">
+            <label>дата выезда:
+              <input type="text" name="checkout" placeholder="4 июля">
+              <div id="checkout-calendar" class="search-form-calendar"/>
+            </label>
+          </p>
+          <p>
+            <label class="search-form-item-left">взрослые:
+              <input type="text" name="adults" value="2">
+            </label>
+            <label class="search-form-item-right">дети:
+              <input type="text" name="kids" value="0">
+            </label>
+          </p>
+          <button class="button" type="submit">найти</button>
+        </form>
       </section>
     </section>
     <section class="map">

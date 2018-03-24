@@ -32,7 +32,62 @@
         <h1 class="visually-hidden">Жилье в Седоне</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр жилья</h2>
-            <!-- to be done -->
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>инфраструктура</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked> бассейн
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"> парковка
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi"> wi-fi
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>тип жилья</legend>
+                    <li class="filter-option">
+                        <label>
+                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" checked> гостиница
+                        </label>
+                    </li>
+                    <li class="filter-option">
+                        <label>
+                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" checked> мотель
+                        </label>
+                    </li>
+                    <li class="filter-option">
+                        <label>
+                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" checked> апартаменты
+                        </label>
+                    </li>
+                </fieldset>
+                <fieldset class="filter-price">
+                    <legend>стоимость в сутки (р):</legend>
+                    <p>
+                        от <output name="min">0</output>
+                        до <output name="max">3000</output>
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="filter-price-min-range">минимальная цена за отель</label>
+                        <input class="filter-price-min-range" id="filter-price-min-range" name="min-price" type="range">
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="filter-price-max-range">максимальная цена за отель</label>
+                        <input class="filter-price-max-range" id="filter-price-max-range" name="max-price" type="range">
+                    </p>
+                </fieldset>
+                <button class="filter-button" type="submit">показать</button>
+            </form>
         </section>
         <section class="hotels">
             <p class="hotels-found-count">найдено:
@@ -72,7 +127,7 @@
                         </a>
                         <p>
                             <span class="hotel-type">гостиница</span>
-                            <span class="hotel-price">ОТ 4000 Р.</span>
+                            <span class="hotel-price">от 4000 р.</span>
                         </p>
                         <p class="hotel-booking">
                             <a class="btn info" href="#">подробнее</a>
@@ -101,7 +156,7 @@
                         </a>
                         <p>
                             <span class="hotel-type">мотель</span>
-                            <span class="hotel-price">ОТ 3000 Р.</span>
+                            <span class="hotel-price">от 3000 р.</span>
                         </p>
                         <p class="hotel-booking">
                             <a class="btn info" href="#">подробнее</a>
@@ -129,7 +184,7 @@
                         </a>
                         <p>
                             <span class="hotel-type">апартаменты</span>
-                            <span class="hotel-price">ОТ 2000 Р.</span>
+                            <span class="hotel-price">от 2000 р.</span>
                         </p>
                         <p class="hotel-booking">
                             <a class="btn info" href="#">подробнее</a>
