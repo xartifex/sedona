@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Ariel, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    background-color: white;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: black;
+    font-weight: 700;
+}
+
+.site-navigation a:hover, .site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    /* incorrect */
+    color: #cacaca;
+}
+
+.container-sedona-mountains {
+    background-color: #a2aab4;
+    background-image: url("../img/background-mountains.jpg");
+    background-repeat: no-repeat;
+}
+
+.before-features, .after-features {
+    background-color: white;
+}
+
+.before-features b {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.before-features p:last-child, .after-features p:last-child {
+    font-weight: 400;
+    color: #333333;
+}
+
+.feature-and-pic-description {
+    background-color: #81b3d2;
+}
+
+.feature-and-pic-description {
+    background-color: #81b3d2;
+    color: white;
+}
+
+.feature-and-pic-description p:first-child {
+    font-size: 21px;
+}
+
+.three-features.with-icons {
+    background-color: white;
+}
+
+.three-features {
+    background-color: #eeeeee;
+}
+
+.three-features ul {
+    list-style: none;
+}
+
+.three-features li p:first-child {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.three-features li p:not(:first-child) {
+    color: #333333;
+}
+
+.after-features {
+    background-color: white;
+}
+
+.after-features b {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.after-features p {
+    color: #333333;
+}
+
+.after-features p {
+    color: #333333;
+}
+
+.btn {
+    font: inherit;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    border: none;
+}
+
+.btn-blue {
+    background-color: #81b3d2;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    background-color: #669ec0;
+}
+
+.btn-blue:active {
+    background-color: #5496bd;
+}
+
+.btn-brown {
+    background-color: #766357;
+}
+
+.btn-brown:hover, .btn-brown:focus {
+    background-color: #604e43;
+}
+
+.btn-brown:active {
+    background-color: #503e33;
+}
