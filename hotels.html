@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +26,7 @@
                     <a href="map.html">карта штата</a>
                 </li>
                 <li>
-                    <a href="hotels.html">гостиницы</a>
+                    <a class="current" href="hotels.html">гостиницы</a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +46,6 @@
                             </label>
                         </li>
                         <li class="filter-option">
-
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
                             <label for="parking">
                                 парковка
@@ -59,24 +61,26 @@
                 </fieldset>
                 <fieldset>
                     <legend>тип жилья</legend>
-                    <li class="filter-option">
-                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
-                        <label for="hotel">
-                            гостиница
-                        </label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
-                        <label for="motel">
-                            мотель
-                        </label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked>
-                        <label for="apartment">
-                            апартаменты
-                        </label>
-                    </li>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                            <label for="hotel">
+                                гостиница
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                            <label for="motel">
+                                мотель
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked>
+                            <label for="apartment">
+                                апартаменты
+                            </label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="filter-price">
                     <legend>стоимость в сутки (р):</legend>
@@ -92,16 +96,14 @@
                             </td>
                         </tr>
                     </table>
-                    <p>
-                        <label class="visually-hidden" for="filter-price-min-range">минимальная цена за отель</label>
-                        <input class="filter-price-min-range" id="filter-price-min-range" name="min-price" type="range">
-                    </p>
-                    <p>
-                        <label class="visually-hidden" for="filter-price-max-range">максимальная цена за отель</label>
-                        <input class="filter-price-max-range" id="filter-price-max-range" name="max-price" type="range">
-                    </p>
+                    <div class="range">
+                        <div class="range-line-bright" />
+                        <div class="range-line-dim" />
+                        <div class="range-min" />
+                        <div class="range-max" />
+                    </div>
                 </fieldset>
-                <button class="filter-button" type="submit">показать</button>
+                <button class="btn filter-button" type="submit">показать</button>
             </form>
         </section>
         <section class="hotels">
@@ -109,7 +111,7 @@
                 <span class="hotel-found-count-var">3</span>
             </p>
             <div class="hotels-sorting">
-                <p>Сортировка:</p>
+                <p>сортировка:</p>
                 <ul>
                     <li>
                         <a class="hotels-sorting-criteria hotels-sorting-criteria-current" href="#">по цене</a>
@@ -137,8 +139,8 @@
                         <p class="hotel-image">
                             <img src="img/hotel-pic1.jpg" width="135" height="90" alt="Amara Resort & Spa">
                         </p>
-                        <a href="hotel.html">
-                            <h3 class="hotel-name">Amara Resort & Spa</h3>
+                        <a class="hotel-name" href="hotel.html">
+                            <h3>Amara Resort & Spa</h3>
                         </a>
                         <p>
                             <span class="hotel-type">гостиница</span>
@@ -156,7 +158,7 @@
                             <img src="img/star.svg" alt="hotel star">
                             <img src="img/star.svg" alt="hotel star">
                         </p>
-                        <p>рейтинг:
+                        <p class="hotel-quality-rating">рейтинг:
                             <span class="hotel-quality-rating-var">8,5</span>
                         </p>
                     </div>
@@ -166,8 +168,8 @@
                         <p class="hotel-image">
                             <img src="img/hotel-pic2.jpg" width="135" height="90" alt="Desert Quail Inn">
                         </p>
-                        <a href="hotel.html">
-                            <h3 class="hotel-name">Desert Quail Inn</h3>
+                        <a class="hotel-name" href="hotel.html">
+                            <h3>Desert Quail Inn</h3>
                         </a>
                         <p>
                             <span class="hotel-type">мотель</span>
@@ -184,7 +186,7 @@
                             <img src="img/star.svg" alt="hotel star">
                             <img src="img/star.svg" alt="hotel star">
                         </p>
-                        <p> рейтинг:
+                        <p class="hotel-quality-rating">рейтинг:
                             <span class="hotel-quality-rating-var">8,9</span>
                         </p>
                     </div>
@@ -194,8 +196,8 @@
                         <p class="hotel-image">
                             <img src="img/hotel-pic3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                         </p>
-                        <a href="hotel.html">
-                            <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                        <a class="hotel-name" href="hotel.html">
+                            <h3>Villas at Poco Diablo</h3>
                         </a>
                         <p>
                             <span class="hotel-type">апартаменты</span>
@@ -211,7 +213,7 @@
                             <img src="img/star.svg" alt="hotel star">
                             <img src="img/star.svg" alt="hotel star">
                         </p>
-                        <p>рейтинг:
+                        <p class="hotel-quality-rating">рейтинг:
                             <span class="hotel-quality-rating-var">9,2</span>
                         </p>
                     </div>

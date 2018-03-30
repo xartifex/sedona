@@ -32,8 +32,11 @@ a {
 }
 
 .site-navigation a:active {
-    /* incorrect */
-    color: #cacaca;
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.site-navigation a.current {
+    color: #766357;
 }
 
 .container-sedona-mountains {
@@ -109,6 +112,7 @@ a {
 
 .btn {
     font: inherit;
+    text-transform: inherit;
     text-align: center;
     color: white;
     vertical-align: middle;
@@ -137,4 +141,141 @@ a {
 
 .btn-brown:active {
     background-color: #503e33;
+}
+
+.search-form {
+    background-color: white;
+}
+
+.search-form input {
+    background-color: #f2f2f2;
+    font: inherit;
+    border: 0px;
+}
+
+.search-form input:active, .search-form input:focus {
+    background-color: #ffffff;
+    outline: 2px solid #ebebeb;
+}
+
+.search-form input:hover {
+    background-color: #ebebeb;
+}
+
+.main-footer {
+    background-color: white;
+}
+
+.main-footer p:first-of-type {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-social a {
+    font: inherit;
+    color: black;
+}
+
+.filter {
+    background-color: #5f768a;
+    background-image: url("../img/hotels-background.jpg");
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filters ul {
+    list-style: none;
+}
+
+.filters legend {
+    font-weight: 700;
+}
+
+.filter-price input {
+    font: inherit;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.filter-button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.filter-button:hover, .filter-button:focus, .filter-button:active {
+    background-color: white;
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.hotels {
+    background: white;
+}
+
+.hotels-found-count {
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.hotels-sorting {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hotels-sorting ul {
+    list-style: none;
+}
+
+.hotels-sorting a {
+    color: black;
+}
+
+.hotels-sorting .hotels-sorting-criteria {
+    color: rgb(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.hotels-sorting .hotels-sorting-criteria:focus, .hotels-sorting .hotels-sorting-criteria:hover {
+    color: #81b3d2;
+}
+
+.hotels-sorting .hotels-sorting-criteria:active {
+    color: black;
+    border-bottom: none;
+}
+
+.hotels-sorting .hotels-sorting-criteria-current {
+    color: #81b3d2;
+    border-bottom: none;
+}
+
+.hotel-name h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: black;
+}
+
+.hotel-name:focus h3, .hotel-name:hover h3 {
+    color: #81b3d2;
+}
+
+.hotel-name:active h3 {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.hotel-quality-rating {
+    background-color: #f2f2f2;
+    color: #666666; 
 }
