@@ -49,7 +49,7 @@ a {
     background-color: white;
 }
 
-.before-features b {
+.before-features {
     line-height: 26px;
 }
 
@@ -167,7 +167,7 @@ a {
     font: inherit;
     text-transform: inherit;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 26px;
     border: 0px;
 }
 
