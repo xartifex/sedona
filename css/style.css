@@ -50,13 +50,22 @@ a {
 }
 
 .before-features b {
+    line-height: 26px;
+}
+
+.before-features b {
     font-size: 21px;
+    line-height: 26px;
     font-weight: 700;
 }
 
 .before-features p:last-child, .after-features p:last-child {
     font-weight: 400;
     color: #333333;
+}
+
+.after-features p:last-child {
+    line-height: 24px;
 }
 
 .feature-and-pic-description {
@@ -119,6 +128,12 @@ a {
     border: none;
 }
 
+.hotel-search-open-form-btn,
+.hotel-search-submit-btn {
+    font-size: 21px;
+    line-height: 26px;    
+}
+ 
 .btn-blue {
     background-color: #81b3d2;
 }
@@ -150,6 +165,9 @@ a {
 .search-form input {
     background-color: #f2f2f2;
     font: inherit;
+    text-transform: inherit;
+    font-weight: 700;
+    line-height: 18px;
     border: 0px;
 }
 
@@ -162,12 +180,34 @@ a {
     background-color: #ebebeb;
 }
 
+.search-form-minus-btn,
+.search-form-plus-btn {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #a9a9a9;
+    background-color: #f2f2f2;
+}
+
+.search-form-minus-btn:focus,
+.search-form-minus-btn:hover,
+.search-form-plus-btn:focus,
+.search-form-plus-btn:hover {
+    color: black;
+}
+
+.search-form-minus-btn:active,
+.search-form-plus-btn:active {
+    color: #81b3d2;
+}
+
 .main-footer {
     background-color: white;
 }
 
 .main-footer p:first-of-type {
     font-size: 21px;
+    line-height: 26px;
     font-weight: 700;
 }
 
@@ -196,6 +236,7 @@ a {
 }
 
 .filters legend {
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -226,6 +267,7 @@ a {
 .hotels-found-count {
     font-weight: 700;
     font-size: 21px;
+    line-height: 26px;
 }
 
 .hotels-sorting {
