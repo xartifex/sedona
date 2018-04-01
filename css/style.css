@@ -10,21 +10,56 @@ body {
     background-color: #f2f2f2;
 }
 
+/* copied from https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
 
+.content-all {
+    padding: 0 40px;
+}
+
+.content-center {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .main-navigation {
     background-color: white;
+    position: relative;
 }
 
 .site-navigation {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 18px 0px;
+}
+
+.main-header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .site-navigation a {
     color: black;
     font-weight: 700;
+    padding: 0 73px;
 }
 
 .site-navigation a:hover, .site-navigation a:focus {
@@ -43,6 +78,16 @@ a {
     background-color: #a2aab4;
     background-image: url("../img/background-mountains.jpg");
     background-repeat: no-repeat;
+    background-position-y: -57px;
+    padding-top: 75px;
+}
+
+.container-sedona-mountains img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 140px;
+    width: 458px;
+    height: 352px;
 }
 
 .before-features, .after-features {
@@ -51,12 +96,41 @@ a {
 
 .before-features {
     line-height: 26px;
+    text-align: center;
+    padding-bottom: 51px;
 }
 
 .before-features b {
+    display: block;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+}
+
+.before-features p {
+    margin: 0;
+    padding: 0;
+}
+
+.feature-and-pic * {
+    margin: 0;
+    padding: 0;
+}
+
+.feature-and-pic {
+    display: flex;
+}
+
+.feature-and-pic p {
+    text-align: center;
+}
+
+.feature-and-pic .picture {
+    width: 800px;
+    height: 256px;
 }
 
 .before-features p:last-child, .after-features p:last-child {
@@ -70,15 +144,15 @@ a {
 
 .feature-and-pic-description {
     background-color: #81b3d2;
-}
-
-.feature-and-pic-description {
-    background-color: #81b3d2;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .feature-and-pic-description p:first-child {
     font-size: 21px;
+    font-weight: 700;
+    padding: 48px 100px 26px;
 }
 
 .three-features.with-icons {
@@ -89,30 +163,57 @@ a {
     background-color: #eeeeee;
 }
 
+.three-features * {
+    margin: 0;
+    padding: 0;
+}
+
 .three-features ul {
     list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.three-features li {
+    padding: 60px 0 134px 0;
+    flex-basis: 400px;
+}
+
+.three-features.with-icons li {
+    padding: 160px 0 108px 0;
+    flex-basis: 400px;
 }
 
 .three-features li p:first-child {
     font-size: 21px;
     font-weight: 700;
+    text-align: center;
 }
 
 .three-features li p:not(:first-child) {
     color: #333333;
+    text-align: center;
 }
 
 .after-features {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
 }
 
 .after-features b {
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 12px;
 }
 
 .after-features p {
     color: #333333;
+    text-align: center;
+    margin-bottom: 52px;
 }
 
 .after-features p {
@@ -128,12 +229,14 @@ a {
     border: none;
 }
 
-.hotel-search-open-form-btn,
-.hotel-search-submit-btn {
+.hotel-search-open-form-btn, .hotel-search-submit-btn {
     font-size: 21px;
-    line-height: 26px;    
+    line-height: 26px;
+    height: 85px;
+    text-align: center;
+    padding: 0 138px;
 }
- 
+
 .btn-blue {
     background-color: #81b3d2;
 }
@@ -158,8 +261,31 @@ a {
     background-color: #503e33;
 }
 
+.search-form-section {
+    position: relative;
+    justify-content: center;
+}
+
 .search-form {
+    position: absolute;
+    font-weight: 700;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    left: 315px;
+    right: 315px;
+    padding: 56px;
+}
+
+.search-form-item p:last-of-type {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search-form p:last-of-type input {
+    box-sizing: border-box;    
+    width: 50px;
+ 
 }
 
 .search-form input {
@@ -180,8 +306,7 @@ a {
     background-color: #ebebeb;
 }
 
-.search-form-minus-btn,
-.search-form-plus-btn {
+.search-form-minus-btn, .search-form-plus-btn {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -189,20 +314,40 @@ a {
     background-color: #f2f2f2;
 }
 
-.search-form-minus-btn:focus,
-.search-form-minus-btn:hover,
-.search-form-plus-btn:focus,
-.search-form-plus-btn:hover {
+.search-form-minus-btn:focus, .search-form-minus-btn:hover, .search-form-plus-btn:focus, .search-form-plus-btn:hover {
     color: black;
 }
 
-.search-form-minus-btn:active,
-.search-form-plus-btn:active {
+.search-form-minus-btn:active, .search-form-plus-btn:active {
     color: #81b3d2;
 }
 
+.map {
+    height: 593px;
+}
+
+.main-footer * {
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer a   {
+    padding: 0;
+    margin: 0;
+}
+
 .main-footer {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 1200px;
+    box-sizing: border-box;
+    height: 120px;
+    bottom: 0px;
+    padding-left: 132px;
+    padding-right: 100px;
 }
 
 .main-footer p:first-of-type {
@@ -319,5 +464,5 @@ a {
 
 .hotel-quality-rating {
     background-color: #f2f2f2;
-    color: #666666; 
+    color: #666666;
 }
