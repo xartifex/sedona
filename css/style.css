@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Ariel, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+}
+
+/* copied from https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-all {
+    padding: 0 40px;
+}
+
+.content-center {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-navigation {
+    background-color: white;
+    position: relative;
+}
+
+.site-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 18px 0px;
+}
+
+.main-header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.site-navigation a {
+    color: black;
+    font-weight: 700;
+    padding: 0 73px;
+}
+
+.site-navigation a:hover, .site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.site-navigation a.current {
+    color: #766357;
+}
+
+.container-sedona-mountains {
+    background-color: #a2aab4;
+    background-image: url("../img/background-mountains.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -57px;
+    padding-top: 75px;
+}
+
+.container-sedona-mountains img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 140px;
+    width: 458px;
+    height: 352px;
+}
+
+.before-features, .after-features {
+    background-color: white;
+}
+
+.before-features {
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 51px;
+}
+
+.before-features b {
+    display: block;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+}
+
+.before-features p {
+    margin: 0;
+    padding: 0;
+}
+
+.feature-and-pic * {
+    margin: 0;
+    padding: 0;
+}
+
+.feature-and-pic {
+    display: flex;
+}
+
+.feature-and-pic p {
+    text-align: center;
+}
+
+.feature-and-pic .picture {
+    width: 800px;
+    height: 256px;
+}
+
+.before-features p:last-child, .after-features p:last-child {
+    font-weight: 400;
+    color: #333333;
+}
+
+.after-features p:last-child {
+    line-height: 24px;
+}
+
+.feature-and-pic-description {
+    background-color: #81b3d2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-and-pic-description p:first-child {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 48px 100px 26px;
+}
+
+.three-features.with-icons {
+    background-color: white;
+}
+
+.three-features {
+    background-color: #eeeeee;
+}
+
+.three-features * {
+    margin: 0;
+    padding: 0;
+}
+
+.three-features ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.three-features li {
+    padding: 60px 0 134px 0;
+    flex-basis: 400px;
+}
+
+.three-features.with-icons li {
+    padding: 160px 0 108px 0;
+    flex-basis: 400px;
+}
+
+.three-features li p:first-child {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.three-features li p:not(:first-child) {
+    color: #333333;
+    text-align: center;
+}
+
+.after-features {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.after-features b {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 12px;
+}
+
+.after-features p {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.after-features p {
+    color: #333333;
+}
+
+.btn {
+    font: inherit;
+    text-transform: inherit;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    border: none;
+}
+
+.hotel-search-open-form-btn, .hotel-search-submit-btn {
+    font-size: 21px;
+    line-height: 26px;
+    height: 85px;
+    text-align: center;
+    padding: 0 138px;
+}
+
+.btn-blue {
+    background-color: #81b3d2;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    background-color: #669ec0;
+}
+
+.btn-blue:active {
+    background-color: #5496bd;
+}
+
+.btn-brown {
+    background-color: #766357;
+}
+
+.btn-brown:hover, .btn-brown:focus {
+    background-color: #604e43;
+}
+
+.btn-brown:active {
+    background-color: #503e33;
+}
+
+.search-form-section {
+    position: relative;
+    justify-content: center;
+}
+
+.search-form {
+    position: absolute;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    left: 315px;
+    right: 315px;
+    padding: 56px;
+}
+
+.search-form-item p:last-of-type {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search-form p:last-of-type input {
+    box-sizing: border-box;    
+    width: 50px;
+ 
+}
+
+.search-form input {
+    background-color: #f2f2f2;
+    font: inherit;
+    text-transform: inherit;
+    font-weight: 700;
+    line-height: 26px;
+    border: 0px;
+}
+
+.search-form input:active, .search-form input:focus {
+    background-color: #ffffff;
+    outline: 2px solid #ebebeb;
+}
+
+.search-form input:hover {
+    background-color: #ebebeb;
+}
+
+.search-form-minus-btn, .search-form-plus-btn {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #a9a9a9;
+    background-color: #f2f2f2;
+}
+
+.search-form-minus-btn:focus, .search-form-minus-btn:hover, .search-form-plus-btn:focus, .search-form-plus-btn:hover {
+    color: black;
+}
+
+.search-form-minus-btn:active, .search-form-plus-btn:active {
+    color: #81b3d2;
+}
+
+.map {
+    height: 593px;
+}
+
+.main-footer * {
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer a   {
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 1200px;
+    box-sizing: border-box;
+    height: 120px;
+    bottom: 0px;
+    padding-left: 132px;
+    padding-right: 100px;
+}
+
+.main-footer p:first-of-type {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-social a {
+    font: inherit;
+    color: black;
+}
+
+.filter {
+    background-color: #5f768a;
+    background-image: url("../img/hotels-background.jpg");
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filters ul {
+    list-style: none;
+}
+
+.filters legend {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.filter-price input {
+    font: inherit;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.filter-button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.filter-button:hover, .filter-button:focus, .filter-button:active {
+    background-color: white;
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.hotels {
+    background: white;
+}
+
+.hotels-found-count {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.hotels-sorting {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hotels-sorting ul {
+    list-style: none;
+}
+
+.hotels-sorting a {
+    color: black;
+}
+
+.hotels-sorting .hotels-sorting-criteria {
+    color: rgb(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.hotels-sorting .hotels-sorting-criteria:focus, .hotels-sorting .hotels-sorting-criteria:hover {
+    color: #81b3d2;
+}
+
+.hotels-sorting .hotels-sorting-criteria:active {
+    color: black;
+    border-bottom: none;
+}
+
+.hotels-sorting .hotels-sorting-criteria-current {
+    color: #81b3d2;
+    border-bottom: none;
+}
+
+.hotel-name h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: black;
+}
+
+.hotel-name:focus h3, .hotel-name:hover h3 {
+    color: #81b3d2;
+}
+
+.hotel-name:active h3 {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.hotel-quality-rating {
+    background-color: #f2f2f2;
+    color: #666666;
+}
