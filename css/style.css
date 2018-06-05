@@ -53,7 +53,7 @@ a {
 .main-header-logo {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
 }
 
 .site-navigation a {
@@ -67,7 +67,7 @@ a {
 }
 
 .site-navigation a:active {
-    color: rgb(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation a.current {
@@ -76,9 +76,9 @@ a {
 
 .container-sedona-mountains {
     background-color: #a2aab4;
-    background-image: url("../img/background-mountains.jpg");
-    background-repeat: no-repeat;
-    background-position-y: -57px;
+    background-image: url(../img/mountain-bottom-overlay.png), url(../img/background-mountains.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 450px, -57px;
     padding-top: 75px;
 }
 
@@ -115,7 +115,7 @@ a {
     padding: 0;
 }
 
-.feature-and-pic * {
+.feature-and-pic p {
     margin: 0;
     padding: 0;
 }
@@ -180,7 +180,7 @@ a {
 }
 
 .three-features.with-icons li {
-    padding: 160px 0 108px 0;
+    padding: 160px 0 108px;
     flex-basis: 400px;
 }
 
@@ -268,6 +268,7 @@ a {
 
 .search-form {
     position: absolute;
+    top: 0px;
     font-weight: 700;
     background-color: white;
     display: flex;
@@ -294,7 +295,7 @@ a {
     text-transform: inherit;
     font-weight: 700;
     line-height: 26px;
-    border: 0px;
+    border: 0;
 }
 
 .search-form input:active, .search-form input:focus {
@@ -337,18 +338,18 @@ a {
 }
 
 .main-footer {
-    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    bottom: 0;
+    padding-left: 132px;
+    padding-right: 100px;
+    margin-top: -120px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    width: 1200px;
     box-sizing: border-box;
+    width: 1200px;
     height: 120px;
-    bottom: 0px;
-    padding-left: 132px;
-    padding-right: 100px;
-    margin-top: -120px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer p:first-of-type {
@@ -430,7 +431,7 @@ a {
 }
 
 .hotels-sorting .hotels-sorting-criteria {
-    color: rgb(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px dotted #81b3d2;
 }
 
@@ -460,7 +461,7 @@ a {
 }
 
 .hotel-name:active h3 {
-    color: rgb(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-quality-rating {
