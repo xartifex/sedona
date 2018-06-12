@@ -13,15 +13,14 @@ body {
 *,
 ::before,
 ::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
-/* copied from https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually*/
+/* copied from https://allyjs.io/tutorials/hiding-elements.html#how-to-hide-elements-visually */
 
 .visually-hidden {
   position: absolute;
@@ -31,6 +30,14 @@ html {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* copied from http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -46,6 +53,7 @@ a {
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.2), 5px 0 20px -5px rgba(0, 0, 0, 0.2);
 }
 
 .main-navigation {
@@ -58,7 +66,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 18px 0;
+  padding: 17.5px 0;
 }
 
 .main-header-logo {
@@ -243,13 +251,24 @@ a {
   border: none;
 }
 
-.hotel-search-open-form-btn,
+.hotel-search-open-form-btn {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  padding: 30px 139px;
+  width: 568px;
+}
+
 .hotel-search-submit-btn {
   font-size: 21px;
+  font-weight: 700;
   line-height: 26px;
-  height: 85px;
   text-align: center;
-  padding: 0 138px;
+  padding: 16px 150px;
+  margin-bottom: 55px;
+  width: 458px;
+  word-wrap: break-word;
 }
 
 .btn-blue {
@@ -286,13 +305,24 @@ a {
 .search-form {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   font-weight: 700;
   background-color: white;
   display: flex;
   flex-direction: column;
-  left: 315px;
-  right: 315px;
-  padding: 56px;
+  width: 568px;
+  padding: 55px;
+  /* todo: remove this:  */
+  height: 450px;
+  margin: 0 auto;
+}
+
+.search-form p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
 }
 
 .search-form-item p:last-of-type {
@@ -310,13 +340,16 @@ a {
   text-transform: inherit;
   font-weight: 700;
   line-height: 26px;
+  padding: 6px 13px;
   border: 0;
+  margin-left: 12px;
+  width: 346px;
 }
 
 .search-form input:active,
 .search-form input:focus {
   background-color: #ffffff;
-  outline: 2px solid #ebebeb;
+  outline: 2px solid #e5e5e5;
 }
 
 .search-form input:hover {
@@ -325,6 +358,7 @@ a {
 
 .search-form-minus-btn,
 .search-form-plus-btn {
+  padding: 5px 13px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
