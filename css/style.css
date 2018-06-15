@@ -385,6 +385,11 @@ a {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.main-footer-inner {
+  position: static;
+  margin-top: 0;
+}
+
 .main-footer .hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -403,7 +408,58 @@ a {
   background-color: #5f768a;
   background-image: url('../img/hotels-background.jpg');
   background-repeat: no-repeat;
+  background-position-y: -56px;
   color: white;
+}
+
+.grouping-wrapper-left {
+  width: 528px;
+  display: flex;
+  /* outline: solid 1px red; */
+}
+
+.inner-flex-left {
+  margin: 0;
+  padding: 0;
+  width: 241px;
+}
+
+.inner-flex-right {
+  margin: 0;
+  padding: 0;
+  width: 288px;
+}
+
+.grouping-wrapper-right {
+  width: 328px;
+  /* outline: solid 1px yellow; */
+}
+
+.hotels .grouping-wrapper-right {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fieldset-title {
+  padding-bottom: 11px;
+}
+
+.filter-input-checkbox,
+.filter-option {
+  padding-bottom: 25px;
+}
+
+.filter-input-checkbox:last-child,
+.filter-option:last-child {
+  padding-bottom: 0;
+}
+
+.flex-layout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 72px 19px;
 }
 
 .filter fieldset {
@@ -445,10 +501,34 @@ a {
   background: white;
 }
 
+.hotels .flex-layout-wrapper {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 17px;
+}
+
+.hotels .inner-flex-left {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hotels-found-count {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.sorting-word {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hotels-sorting-wrapper {
+  display: flex;
+  /* outline: 2px solid orange; */
 }
 
 .hotels-sorting {
@@ -458,6 +538,7 @@ a {
 
 .hotels-sorting ul {
   list-style: none;
+  display: flex;
 }
 
 .hotels-sorting a {
@@ -484,6 +565,24 @@ a {
   border-bottom: none;
 }
 
+.hotels-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-list p {
+  margin: 0;
+}
+
+.hotels-list .hotel-image {
+  margin-right: 30px;
+}
+
+.hotel-image img {
+  width: 135px;
+  height: 90px;
+}
+
 .hotel-name h3 {
   font-size: 21px;
   line-height: 26px;
@@ -503,4 +602,33 @@ a {
 .hotel-quality-rating {
   background-color: #f2f2f2;
   color: #666666;
+}
+
+.hotel-flex-inner-layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-flex-inner-layout-wrapper p,
+.hotel-flex-inner-layout-wrapper h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-booking .btn {
+  font-weight: 700;
+  padding: 4px 17px;
+}
+
+.hotel-quality-stars img {
+  padding-right: 3px;
+}
+
+.hotel-quality-stars img:last-child {
+  padding-right: 0;
+}
+
+.hotel-quality-rating {
+  padding: 3px 14px;
 }
