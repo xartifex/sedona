@@ -440,7 +440,7 @@ a {
 .grouping-wrapper-left {
   width: 528px;
   display: flex;
-  outline: solid 1px red;
+  /* outline: solid 1px red; */
 }
 
 .inner-flex-left {
@@ -457,7 +457,7 @@ a {
 
 .grouping-wrapper-right {
   width: 328px;
-  outline: solid 1px yellow;
+  /* outline: solid 1px yellow; */
 }
 
 .hotels .grouping-wrapper-right {
