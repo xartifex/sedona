@@ -1,10 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', Ariel, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -30,14 +29,6 @@ html {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* copied from http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement */
-
-.hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -104,7 +95,7 @@ a {
 }
 
 .site-navigation a {
-  color: black;
+  color: inherit;
   font-weight: 700;
 }
 
@@ -129,16 +120,12 @@ a {
   padding-top: 76px;
 }
 
-.container-advantages {
-  margin-top: -2px;
-}
-
 .container-sedona-mountains img {
   display: block;
   margin: 0 auto;
   padding-bottom: 142px;
   width: 458px;
-  height: 494px;
+  height: 492px;
 }
 
 .before-features,
@@ -250,7 +237,7 @@ a {
 
 .three-features.with-icons li {
   position: relative;
-  padding: 161px 73px 83px;
+  padding: 160px 73px 84px;
   flex-basis: 400px;
 }
 
@@ -287,12 +274,12 @@ a {
 }
 
 .three-features li {
-  padding: 47px 95px 38px;
+  padding: 47px 95px 39px;
   flex-basis: 400px;
 }
 
 .three-features h3 {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
@@ -321,7 +308,7 @@ a {
 .after-features p {
   color: #333333;
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 51px;
 }
 
 .btn {
@@ -376,6 +363,7 @@ a {
 
 .btn-brown:active {
   background-color: #503e33;
+  color: rgb(169, 169, 169);
 }
 
 .search-form-section {
@@ -449,8 +437,41 @@ a {
 
 /* <- */
 
+.search-form-item {
+  position: relative;
+}
+
+.search-form-calendar-btn {
+  position: absolute;
+  top: 9px;
+  left: 428px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 22px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.search-form-calendar-btn {
+  fill: rgb(169, 169, 169);
+}
+
+.search-form-calendar-btn:hover path,
+.search-form-calendar-btn:focus path {
+  fill: black;
+}
+
+.search-form-calendar-btn:active path,
+.search-form-calendar-btn:active path {
+  fill: rgb(129, 179, 210);
+}
+
 .search-form-minus-btn,
 .search-form-plus-btn {
+  position: relative;
   padding: 5px 13px;
   line-height: 26px;
   font-weight: 700;
@@ -459,6 +480,49 @@ a {
   width: 38px;
   height: 38px;
   vertical-align: top;
+}
+
+.search-form-minus-btn::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 3px;
+  left: 14px;
+  background-color: rgb(169, 169, 169);
+}
+
+.search-form-plus-btn::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 3px;
+  left: 14px;
+  background-color: rgb(169, 169, 169);
+}
+
+.search-form-minus-btn:hover::before,
+.search-form-plus-btn:hover::before,
+.search-form-plus-btn:hover::after,
+.search-form-minus-btn:focus::before,
+.search-form-plus-btn:focus::before,
+.search-form-plus-btn:focus::after {
+  background-color: black;
+}
+
+.search-form-minus-btn:active::before,
+.search-form-plus-btn:active::before,
+.search-form-plus-btn:active::after {
+  background-color: rgb(129, 179, 210);
+}
+
+.search-form-plus-btn::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 11px;
+  top: 15px;
+  left: 18px;
+  background-color: rgb(169, 169, 169);
 }
 
 .search-form .adults-kids-count {
@@ -470,7 +534,6 @@ a {
   height: 38px;
   padding: 10px 15px;
 }
-
 
 .search-form-minus-btn:focus,
 .search-form-minus-btn:hover,
@@ -486,7 +549,7 @@ a {
 
 .adults-kids-count .search-form-item-left {
   margin-right: 16px;
-} 
+}
 
 .adults-kids-count .search-form-item-right {
   width: 38px;
@@ -500,15 +563,43 @@ a {
 
 .main-footer {
   position: relative;
-  padding-left: 132px;
-  padding-right: 100px;
   margin-top: -120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  height: 120px;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 35px 0 40px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer p,
+.main-footer div {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
+}
+
+.social-btn:active path {
+  fill: rgba(255, 255, 255, 0.3)
 }
 
 .main-footer-inner {
@@ -517,17 +608,52 @@ a {
 }
 
 .main-footer .hashtag {
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
 .footer-social ul {
+  display: flex;
+  width: 156px;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0 auto;
+  padding: 0
 }
 
-.footer-social a {
-  color: black;
+.footer-social li {
+  margin: 0;
+  padding: 0;
+  width: 48px;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copyright svg {
+  display: block;
+  margin-left: 13px;
+}
+
+.footer-copyright-logo path {
+  fill: rgb(169, 169, 169);
+}
+
+.footer-copyright-logo:hover path,
+.footer-copyright-logo:hover path {
+  fill: black;
+}
+
+.footer-copyright-logo:active path {
+  fill:#81b3d2;
 }
 
 .filter {
@@ -747,12 +873,8 @@ a {
   padding: 4px 17px;
 }
 
-.hotel-quality-stars img {
+.hotel-quality-stars img+img {
   padding-right: 3px;
-}
-
-.hotel-quality-stars img:last-child {
-  padding-right: 0;
 }
 
 .hotel-quality-rating {
