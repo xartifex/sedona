@@ -11,7 +11,7 @@
 
 <body>
   <div class="content-all">
-    <div class="content-center">
+    <div class="content-center shaded">
       <header class="main-header">
         <nav class="main-navigation">
           <a href="index.html" class="main-header-logo">
@@ -131,12 +131,23 @@
               </ul>
             </div>
             <div class="hotels-sorting grouping-wrapper-right">
-              <ul>
+              <ul class="sorting-directions">
                 <li>
-                  <a class="hotels-sorting-direction-up" href="#">по возрастанию</a>
+                  <a class="hotels-sorting-direction-up" href="#">
+                    <span class="visually-hidden">по убыванию</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                      <path fill="#231F20" d="M5.5 0L0 10h11z" />
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <a class="hotels-sorting-direction-down hotels-sorting-direction-down-active" href="#">по убыванию</a>
+                  <a class="hotels-sorting-direction-down hotels-sorting-direction-down-current" href="#">
+                    <span class="visually-hidden">по возрастанию</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                      <path fill="#231F20" d="M5.5 10L0 0h11" />
+                    </svg>
+                  </a>
+
                 </li>
               </ul>
             </div>
@@ -152,7 +163,7 @@
                   <h3>
                     <a class="hotel-name" href="hotel.html">Amara Resort & Spa</a>
                   </h3>
-                  <p>
+                  <p class="hotel-type-and-price">
                     <span class="hotel-type">гостиница</span>
                     <span class="hotel-price">от 4000 р.</span>
                   </p>
@@ -183,7 +194,7 @@
                   <h3>
                     <a class="hotel-name" href="hotel.html">Desert Quail Inn</a>
                   </h3>
-                  <p>
+                  <p class="hotel-type-and-price">
                     <span class="hotel-type">мотель</span>
                     <span class="hotel-price">от 3000 р.</span>
                   </p>
@@ -213,7 +224,7 @@
                   <h3>
                     <a class="hotel-name" href="hotel.html">Villas at Poco Diablo</a>
                   </h3>
-                  <p>
+                  <p class="hotel-type-and-price">
                     <span class="hotel-type">апартаменты</span>
                     <span class="hotel-price">от 2000 р.</span>
                   </p>
