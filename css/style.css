@@ -199,6 +199,11 @@ a {
   margin-top: 23px;
 }
 
+.feature-and-pic-description .devlis-bridge-descr {
+  margin: 0 -20px;
+  margin-top: 22px;
+}
+
 .three-features.with-icons {
   background-color: white;
 }
@@ -225,14 +230,9 @@ a {
   align-items: flex-start;
 }
 
-.three-features li {
-  padding: 60px 0 134px 0;
-  flex-basis: 400px;
-}
-
 .three-features.with-icons li {
   position: relative;
-  padding: 160px 73px 84px;
+  padding: 161px 84px 83px;
   flex-basis: 400px;
 }
 
@@ -266,19 +266,20 @@ a {
 }
 
 .three-features li {
-  padding: 47px 95px 39px;
+  padding: 47px 95px 40px;
   flex-basis: 400px;
 }
 
 .three-features h3 {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
 }
 
 .three-features p {
-  margin-bottom: 22px;
+  margin: 0 -35px;
+  margin-bottom: 21px;
   color: #333333;
   text-align: center;
 }
@@ -294,13 +295,14 @@ a {
 .after-features b {
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .after-features p {
   color: #333333;
   text-align: center;
-  margin-bottom: 51px;
+  margin-bottom: 46px;
+  line-height: 24px;
 }
 
 .btn {
@@ -594,12 +596,13 @@ a {
 
 .footer-social ul {
   display: flex;
-  width: 156px;
+  width: 152px;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   margin: 0 auto;
-  padding: 0
+  padding: 0;
+  padding-top: 1px;
 }
 
 .footer-social li {
@@ -613,7 +616,15 @@ a {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.footer-copyright span {
+  margin-left: 102px; 
+}
+
+.footer-copyright a {
+  margin-left: -6px;
 }
 
 .footer-copyright svg {
