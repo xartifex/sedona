@@ -196,8 +196,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -735,6 +735,10 @@ a {
   /* outline: solid 1px red; */
 }
 
+.hotels .grouping-wrapper-left {
+  width: 816px;
+}
+
 .inner-flex-left {
   margin: 0;
   padding: 0;
@@ -1034,21 +1038,29 @@ a {
   /* outline: 2px solid orange; */
 }
 
-.hotels-sorting {
+.hotels-sorting,
+.hotels-sorting-directions {
   margin: 0;
   padding: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  width: 277px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 600px;
   padding-left: 38px;
   padding-top: 7px;
   font-size: 12px;
   line-height: 18px;
   list-style: none;
+  margin-left: -33px;
+}
+
+.hotels-sorting-directions {
+  width: 241px;
 }
 
 .sorting-directions {
@@ -1066,6 +1078,10 @@ a {
 
 .hotels-sorting a {
   color: black;
+}
+
+.hotels-sorting li {
+  margin-left: 33px;
 }
 
 .hotels-sorting .hotels-sorting-criteria {
@@ -1161,7 +1177,7 @@ a {
 .hotel-flex-inner-layout-wrapper {
   margin: 0;
   padding: 0;
-  width: 257px;
+  width: 600px;
   margin-left: 30px;
   margin-top: -5px;
   display: -webkit-box;
