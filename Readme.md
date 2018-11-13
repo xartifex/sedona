@@ -1,3 +1,9 @@
+# Intro
+This is a graduation project for [Professional HTML & CSS, level 1](https://htmlacademy.ru/intensive/htmlcss) workshop. 
+Final result is composed of two pages:
+ * [index.html](http://xartifex.com/sedona.github.io/index.html)
+ * [hotels.html](http://xartifex.com/sedona.github.io/index.html)
+
 # Личный проект «Седона»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/21/user/623699).
